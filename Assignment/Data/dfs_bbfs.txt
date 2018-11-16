@@ -1,0 +1,183 @@
+알고리즘 데이터 dfs < bbfs
+
+W : 30
+I  0 : 270	 1	 270.00
+I  1 : 2626	 15	 175.07
+I  2 : 2916	 27	 108.00
+I  3 : 1827	 19	 96.16
+I  4 : 1357	 14	 96.93
+depth first search
+maxprofit: 4253, nodes : 11
+breadth first search
+maxprofit: 4253, nodes : 31
+best first search
+maxprofit: 4253, nodes : 13
+
+W : 30
+I  0 : 2717	 3	 905.67
+I  1 : 1880	 16	 117.50
+I  2 : 2259	 26	 86.88
+I  3 : 901	 24	 37.54
+I  4 : 417	 11	 37.91
+depth first search
+maxprofit: 5014, nodes : 11
+breadth first search
+maxprofit: 5014, nodes : 19
+best first search
+maxprofit: 5014, nodes : 13
+
+W : 30
+I  0 : 2073	 11	 188.45
+I  1 : 2349	 25	 93.96
+I  2 : 2030	 29	 70.00
+I  3 : 255	 4	 63.75
+I  4 : 371	 7	 53.00
+depth first search
+maxprofit: 2699, nodes : 11
+breadth first search
+maxprofit: 2699, nodes : 23
+best first search
+maxprofit: 2699, nodes : 12
+
+W : 30
+I  0 : 1623	 9	 180.33
+I  1 : 2709	 27	 100.33
+I  2 : 495	 5	 99.00
+I  3 : 888	 16	 55.50
+I  4 : 1151	 26	 44.27
+depth first search
+maxprofit: 3006, nodes : 9
+breadth first search
+maxprofit: 3006, nodes : 17
+best first search
+maxprofit: 3006, nodes : 10
+
+W : 30
+I  0 : 2988	 18	 166.00
+I  1 : 2470	 18	 137.22
+I  2 : 2618	 22	 119.00
+I  3 : 1350	 18	 75.00
+I  4 : 910	 12	 75.83
+depth first search
+maxprofit: 3898, nodes : 11
+breadth first search
+maxprofit: 3898, nodes : 25
+best first search
+maxprofit: 3898, nodes : 13
+
+W : 30
+I  0 : 2504	 5	 500.80
+I  1 : 803	 13	 61.77
+I  2 : 1002	 20	 50.10
+I  3 : 407	 15	 27.13
+I  4 : 335	 12	 27.92
+depth first search
+maxprofit: 3642, nodes : 11
+breadth first search
+maxprofit: 3642, nodes : 17
+best first search
+maxprofit: 3642, nodes : 12
+
+W : 30
+I  0 : 1052	 9	 116.89
+I  1 : 1922	 27	 71.19
+I  2 : 1204	 25	 48.16
+I  3 : 1026	 21	 48.86
+I  4 : 256	 12	 21.33
+depth first search
+maxprofit: 2078, nodes : 9
+breadth first search
+maxprofit: 2078, nodes : 15
+best first search
+maxprofit: 2078, nodes : 12
+
+W : 30
+I  0 : 342	 4	 85.50
+I  1 : 578	 10	 57.80
+I  2 : 1057	 27	 39.15
+I  3 : 1034	 26	 39.77
+I  4 : 282	 15	 18.80
+depth first search
+maxprofit: 1376, nodes : 15
+breadth first search
+maxprofit: 1376, nodes : 27
+best first search
+maxprofit: 1376, nodes : 16
+
+W : 30
+I  0 : 1768	 12	 147.33
+I  1 : 2561	 21	 121.95
+I  2 : 2441	 28	 87.18
+I  3 : 1579	 18	 87.72
+I  4 : 313	 10	 31.30
+depth first search
+maxprofit: 3347, nodes : 9
+breadth first search
+maxprofit: 3347, nodes : 19
+best first search
+maxprofit: 3347, nodes : 13
+
+W : 30
+I  0 : 2178	 4	 544.50
+I  1 : 209	 1	 209.00
+I  2 : 990	 8	 123.75
+I  3 : 2980	 27	 110.37
+I  4 : 2771	 25	 110.84
+depth first search
+maxprofit: 5158, nodes : 15
+breadth first search
+maxprofit: 5158, nodes : 43
+best first search
+maxprofit: 5158, nodes : 17
+
+W : 30
+I  0 : 537	 1	 537.00
+I  1 : 2318	 19	 122.00
+I  2 : 1690	 15	 112.67
+I  3 : 2090	 22	 95.00
+I  4 : 1334	 14	 95.29
+depth first search
+maxprofit: 3561, nodes : 17
+breadth first search
+maxprofit: 3561, nodes : 35
+best first search
+maxprofit: 3561, nodes : 18
+
+W : 30
+I  0 : 2852	 5	 570.40
+I  1 : 2666	 11	 242.36
+I  2 : 2767	 19	 145.63
+I  3 : 278	 23	 12.09
+I  4 : 177	 14	 12.64
+depth first search
+maxprofit: 5695, nodes : 11
+breadth first search
+maxprofit: 5695, nodes : 19
+best first search
+maxprofit: 5695, nodes : 13
+
+W : 30
+I  0 : 1702	 7	 243.14
+I  1 : 1727	 9	 191.89
+I  2 : 2189	 17	 128.76
+I  3 : 1163	 24	 48.46
+I  4 : 684	 14	 48.86
+depth first search
+maxprofit: 4113, nodes : 17
+breadth first search
+maxprofit: 4113, nodes : 25
+best first search
+maxprofit: 4113, nodes : 18
+
+W : 30
+I  0 : 2055	 14	 146.79
+I  1 : 2821	 23	 122.65
+I  2 : 2255	 22	 102.50
+I  3 : 2126	 25	 85.04
+I  4 : 1365	 16	 85.31
+depth first search
+maxprofit: 3420, nodes : 15
+breadth first search
+maxprofit: 3420, nodes : 25
+best first search
+maxprofit: 3420, nodes : 16

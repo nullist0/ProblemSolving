@@ -1,0 +1,144 @@
+W : 10, N : 10, TestCase : 100000
+depth <= breadth : 87614
+breadth < depth : 12386
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 50, N : 10, TestCase : 100000
+depth <= breadth : 89617
+breadth < depth : 10383
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 150, N : 10, TestCase : 100000
+depth <= breadth : 90049
+breadth < depth : 9951
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 250, N : 10, TestCase : 100000
+depth <= breadth : 90177
+breadth < depth : 9823
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+
+W : 10, N : 30, TestCase : 100000
+depth <= breadth : 86893
+breadth < depth : 13107
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 99999
+depth < best : 1
+W : 50, N : 30, TestCase : 100000
+depth <= breadth : 88112
+breadth < depth : 11888
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 150, N : 30, TestCase : 100000
+depth <= breadth : 88873
+breadth < depth : 11127
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 250, N : 30, TestCase : 100000
+depth <= breadth : 89008
+breadth < depth : 10992
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+
+W : 10, N : 50, TestCase : 100000
+depth <= breadth : 92522
+breadth < depth : 7478
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 99999
+depth < best : 1
+W : 50, N : 50, TestCase : 100000
+depth <= breadth : 91749
+breadth < depth : 8251
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 150, N : 50, TestCase : 100000
+depth <= breadth : 92303
+breadth < depth : 7697
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 250, N : 50, TestCase : 100000
+depth <= breadth : 92427
+breadth < depth : 7573
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+
+W : 10, N : 70, TestCase : 100000
+depth <= breadth : 96495
+breadth < depth : 3505
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 50, N : 70, TestCase : 100000
+depth <= breadth : 95200
+breadth < depth : 4800
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 150, N : 70, TestCase : 100000
+depth <= breadth : 95334
+breadth < depth : 4666
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 250, N : 70, TestCase : 100000
+depth <= breadth : 95484
+breadth < depth : 4516
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+
+W : 10, N : 90, TestCase : 100000
+depth <= breadth : 98464
+breadth < depth : 1536
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 50, N : 90, TestCase : 100000
+depth <= breadth : 97435
+breadth < depth : 2565
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 150, N : 90, TestCase : 100000
+depth <= breadth : 97432
+breadth < depth : 2568
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0
+W : 250, N : 90, TestCase : 100000
+depth <= breadth : 97542
+breadth < depth : 2458
+best <= breadth : 100000
+breadth < best : 0
+best <= depth : 100000
+depth < best : 0

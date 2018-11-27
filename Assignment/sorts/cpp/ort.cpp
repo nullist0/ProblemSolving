@@ -30,7 +30,7 @@ void settingTest(int n, int *arr){
     shuffle(n, arr);
 }
 
-void measureTime(int n){
+void measureTime(int n, int* res){
     heapsort h;
     quicksort q;
     system_clock::time_point start_quick, end_quick, start_heap, end_heap;
@@ -61,10 +61,12 @@ void measureTime(int n){
         printf("Sorted\n");
         printf("Quick\t%lu ns\n",   qtime.count());
         printf("Heap\t%lu ns\n",    htime.count());
+        res[0] = qtime.count();
+        res[1] = htime.count();
     }
 }
 
-void measureOperation(int n){
+void measureOperation(int n, int res[2][3]){
     countHeapsort h;
     countQuicksort q;
     int q_arr[n], h_arr[n], ans[n], cache = 0;
@@ -83,26 +85,57 @@ void measureOperation(int n){
 
     if(cache == 0){
         printf("Sorted\n");
-        printf("Quick\tComparison : %d, Assginment : %d\n", q.comparison, q.assignment);
-        printf("Heap\tComparison : %d, Assginment : %d\n",  h.comparison, h.assignment);
+        printf("Quick\tComparison : %d, Assginment : %d, Exchange : %d\n", q.comparison, q.assignment, q.exchange);
+        printf("Heap\tComparison : %d, Assginment : %d, Exchange : %d\n",  h.comparison, h.assignment, h.exchange);
+
+        res[0][0] = q.comparison;
+        res[0][1] = q.assignment;
+        res[0][2] = q.exchange;
+
+        res[1][0] = h.comparison;
+        res[1][1] = h.assignment;
+        res[1][2] = h.exchange;
     }
 }
 
 void testingTime(int start, int end, int step){
+    int res[2];
     for(int ln = start; ln <= end; ln+=step){
         printf("N = %d\n", ln);
-        measureTime(ln);
+        measureTime(ln, res);
     }
 }
 
 void testingOperation(int start, int end, int step){
+    int res[2][3];
     for(int ln = start; ln <= end; ln+=step){
         printf("N = %d\n", ln);
-        measureOperation(ln);
+        measureOperation(ln, res);
+    }
+}
+
+void testingPTime(int start, int end, int step){
+    int res[2];
+    for(int ln = start; ln <= end; ln+=step){
+        printf("N = %d\n", ln);
+        measureTime(ln, res);
+        printf("quick/heap = %.2lf\n", (double)res[0]/res[1]);
+    }
+}
+
+void testingPOperation(int start, int end, int step){
+    int res[2][3];
+    for(int ln = start; ln <= end; ln+=step){
+        printf("N = %d\n", ln);
+        measureOperation(ln, res);
+        printf("comparison, quick/heap = %.2lf\n", (double)res[0][0]/res[1][0]);
+        printf("assignment, quick/heap = %.2lf\n", (double)res[0][1]/res[1][1]);
+        printf("  exchange, quick/heap = %.2lf\n", (double)res[0][2]/res[1][2]);
     }
 }
 
 int main(void){
-    testingOperation(1, 10, 1);
+    //testingPTime(100, 10000, 100);
+    testingPOperation(100, 10000, 100);
     return 0;
 }

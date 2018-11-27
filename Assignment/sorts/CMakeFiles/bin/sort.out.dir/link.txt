@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/./bin/sort.out.dir/cpp/ort.cpp.o CMakeFiles/./bin/sort.out.dir/cpp/heap.cpp.o CMakeFiles/./bin/sort.out.dir/cpp/quick.cpp.o CMakeFiles/./bin/sort.out.dir/cpp/countHeap.cpp.o CMakeFiles/./bin/sort.out.dir/cpp/countQuick.cpp.o  -o ./bin/sort.out 

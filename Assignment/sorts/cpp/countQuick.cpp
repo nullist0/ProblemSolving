@@ -13,7 +13,8 @@ void countQuicksort::partition(int *pp, int low, int high){
             cache = arr[j];
             arr[j] = arr[i];
             arr[i] = cache;
-            assignment++;
+            exchange++;
+            assignment+=4;
         }
         i++;
         assignment++;
@@ -21,6 +22,7 @@ void countQuicksort::partition(int *pp, int low, int high){
     cache = arr[j];
     arr[j] = arr[pivot];
     arr[pivot] = cache;
+    exchange++;
     *pp = j;
     assignment+=4;
 }

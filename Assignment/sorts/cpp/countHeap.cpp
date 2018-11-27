@@ -56,6 +56,7 @@ void countHeapsort::siftdown(int H){
         cache = heap[parent];
         heap[parent] = heap[largerchild];
         heap[largerchild] = cache;
+        exchange ++;
         assignment += 3;
 
         parent = largerchild;

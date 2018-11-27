@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/leepyoungwon/tests/sorts/cpp/countHeap.cpp
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/cpp/countHeap.cpp
 ../headers/countheap.h
-/home/leepyoungwon/tests/sorts/headers/countheap.h
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/headers/countheap.h
 
-/home/leepyoungwon/tests/sorts/cpp/countQuick.cpp
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/cpp/countQuick.cpp
 ../headers/countquick.h
-/home/leepyoungwon/tests/sorts/headers/countquick.h
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/headers/countquick.h
 
-/home/leepyoungwon/tests/sorts/cpp/heap.cpp
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/cpp/heap.cpp
 ../headers/heap.h
-/home/leepyoungwon/tests/sorts/headers/heap.h
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/headers/heap.h
 
-/home/leepyoungwon/tests/sorts/cpp/ort.cpp
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/cpp/ort.cpp
 cstdio
 -
 chrono
@@ -28,23 +28,23 @@ ctime
 cstdlib
 -
 ../headers/heap.h
-/home/leepyoungwon/tests/sorts/headers/heap.h
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/headers/heap.h
 ../headers/quick.h
-/home/leepyoungwon/tests/sorts/headers/quick.h
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/headers/quick.h
 ../headers/countheap.h
-/home/leepyoungwon/tests/sorts/headers/countheap.h
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/headers/countheap.h
 ../headers/countquick.h
-/home/leepyoungwon/tests/sorts/headers/countquick.h
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/headers/countquick.h
 
-/home/leepyoungwon/tests/sorts/cpp/quick.cpp
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/cpp/quick.cpp
 ../headers/quick.h
-/home/leepyoungwon/tests/sorts/headers/quick.h
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/headers/quick.h
 
-/home/leepyoungwon/tests/sorts/headers/countheap.h
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/headers/countheap.h
 
-/home/leepyoungwon/tests/sorts/headers/countquick.h
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/headers/countquick.h
 
-/home/leepyoungwon/tests/sorts/headers/heap.h
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/headers/heap.h
 
-/home/leepyoungwon/tests/sorts/headers/quick.h
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/headers/quick.h
 

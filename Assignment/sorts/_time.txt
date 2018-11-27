@@ -1,0 +1,400 @@
+N = 100
+Sorted
+Quick	19590 ns
+Heap	37022 ns
+N = 200
+Sorted
+Quick	44229 ns
+Heap	77632 ns
+N = 300
+Sorted
+Quick	69329 ns
+Heap	130058 ns
+N = 400
+Sorted
+Quick	94279 ns
+Heap	174989 ns
+N = 500
+Sorted
+Quick	119642 ns
+Heap	226725 ns
+N = 600
+Sorted
+Quick	152191 ns
+Heap	280748 ns
+N = 700
+Sorted
+Quick	176829 ns
+Heap	331964 ns
+N = 800
+Sorted
+Quick	237137 ns
+Heap	385141 ns
+N = 900
+Sorted
+Quick	252230 ns
+Heap	462726 ns
+N = 1000
+Sorted
+Quick	282094 ns
+Heap	497493 ns
+N = 1100
+Sorted
+Quick	293886 ns
+Heap	548625 ns
+N = 1200
+Sorted
+Quick	323256 ns
+Heap	603736 ns
+N = 1300
+Sorted
+Quick	366617 ns
+Heap	666459 ns
+N = 1400
+Sorted
+Quick	260443 ns
+Heap	1417712 ns
+N = 1500
+Sorted
+Quick	336186 ns
+Heap	566436 ns
+N = 1600
+Sorted
+Quick	309919 ns
+Heap	582442 ns
+N = 1700
+Sorted
+Quick	353732 ns
+Heap	604340 ns
+N = 1800
+Sorted
+Quick	449842 ns
+Heap	813091 ns
+N = 1900
+Sorted
+Quick	372343 ns
+Heap	671893 ns
+N = 2000
+Sorted
+Quick	427077 ns
+Heap	711437 ns
+N = 2100
+Sorted
+Quick	410969 ns
+Heap	748120 ns
+N = 2200
+Sorted
+Quick	436158 ns
+Heap	791263 ns
+N = 2300
+Sorted
+Quick	456688 ns
+Heap	840028 ns
+N = 2400
+Sorted
+Quick	476965 ns
+Heap	869214 ns
+N = 2500
+Sorted
+Quick	492224 ns
+Heap	916498 ns
+N = 2600
+Sorted
+Quick	2037693 ns
+Heap	1234901 ns
+N = 2700
+Sorted
+Quick	727110 ns
+Heap	1321795 ns
+N = 2800
+Sorted
+Quick	745095 ns
+Heap	1238987 ns
+N = 2900
+Sorted
+Quick	732527 ns
+Heap	1388484 ns
+N = 3000
+Sorted
+Quick	813585 ns
+Heap	1892017 ns
+N = 3100
+Sorted
+Quick	849665 ns
+Heap	1483524 ns
+N = 3200
+Sorted
+Quick	868811 ns
+Heap	1568348 ns
+N = 3300
+Sorted
+Quick	850831 ns
+Heap	1508977 ns
+N = 3400
+Sorted
+Quick	708801 ns
+Heap	1312090 ns
+N = 3500
+Sorted
+Quick	796244 ns
+Heap	1330697 ns
+N = 3600
+Sorted
+Quick	755660 ns
+Heap	1375333 ns
+N = 3700
+Sorted
+Quick	817054 ns
+Heap	1425706 ns
+N = 3800
+Sorted
+Quick	1189078 ns
+Heap	2388475 ns
+N = 3900
+Sorted
+Quick	869436 ns
+Heap	1509583 ns
+N = 4000
+Sorted
+Quick	849128 ns
+Heap	1539723 ns
+N = 4100
+Sorted
+Quick	891992 ns
+Heap	1583494 ns
+N = 4200
+Sorted
+Quick	900325 ns
+Heap	1624911 ns
+N = 4300
+Sorted
+Quick	884134 ns
+Heap	1664656 ns
+N = 4400
+Sorted
+Quick	948570 ns
+Heap	1720132 ns
+N = 4500
+Sorted
+Quick	1000027 ns
+Heap	1750599 ns
+N = 4600
+Sorted
+Quick	1008159 ns
+Heap	1797306 ns
+N = 4700
+Sorted
+Quick	1064817 ns
+Heap	1840100 ns
+N = 4800
+Sorted
+Quick	1055161 ns
+Heap	1889921 ns
+N = 4900
+Sorted
+Quick	1107154 ns
+Heap	1928520 ns
+N = 5000
+Sorted
+Quick	1089667 ns
+Heap	1973704 ns
+N = 5100
+Sorted
+Quick	1143777 ns
+Heap	2816409 ns
+N = 5200
+Sorted
+Quick	1174134 ns
+Heap	2063044 ns
+N = 5300
+Sorted
+Quick	1184750 ns
+Heap	2105734 ns
+N = 5400
+Sorted
+Quick	1213177 ns
+Heap	2143078 ns
+N = 5500
+Sorted
+Quick	1231324 ns
+Heap	2185490 ns
+N = 5600
+Sorted
+Quick	1262895 ns
+Heap	2232964 ns
+N = 5700
+Sorted
+Quick	1296491 ns
+Heap	2277328 ns
+N = 5800
+Sorted
+Quick	1333909 ns
+Heap	2325104 ns
+N = 5900
+Sorted
+Quick	1340333 ns
+Heap	2361040 ns
+N = 6000
+Sorted
+Quick	1351511 ns
+Heap	2415349 ns
+N = 6100
+Sorted
+Quick	1378509 ns
+Heap	2456073 ns
+N = 6200
+Sorted
+Quick	1374916 ns
+Heap	2501593 ns
+N = 6300
+Sorted
+Quick	1419485 ns
+Heap	2543697 ns
+N = 6400
+Sorted
+Quick	1431844 ns
+Heap	2585028 ns
+N = 6500
+Sorted
+Quick	1449054 ns
+Heap	2635925 ns
+N = 6600
+Sorted
+Quick	1591715 ns
+Heap	2699530 ns
+N = 6700
+Sorted
+Quick	1575739 ns
+Heap	2730874 ns
+N = 6800
+Sorted
+Quick	1606015 ns
+Heap	2765302 ns
+N = 6900
+Sorted
+Quick	1572114 ns
+Heap	2801195 ns
+N = 7000
+Sorted
+Quick	1585127 ns
+Heap	2861265 ns
+N = 7100
+Sorted
+Quick	1647205 ns
+Heap	2907474 ns
+N = 7200
+Sorted
+Quick	1702350 ns
+Heap	2948113 ns
+N = 7300
+Sorted
+Quick	1778113 ns
+Heap	2987480 ns
+N = 7400
+Sorted
+Quick	1675905 ns
+Heap	3031435 ns
+N = 7500
+Sorted
+Quick	1742642 ns
+Heap	3077667 ns
+N = 7600
+Sorted
+Quick	1791786 ns
+Heap	3138983 ns
+N = 7700
+Sorted
+Quick	1787237 ns
+Heap	3179310 ns
+N = 7800
+Sorted
+Quick	1900085 ns
+Heap	3219513 ns
+N = 7900
+Sorted
+Quick	1839137 ns
+Heap	3265884 ns
+N = 8000
+Sorted
+Quick	1975887 ns
+Heap	3318405 ns
+N = 8100
+Sorted
+Quick	1984336 ns
+Heap	3365322 ns
+N = 8200
+Sorted
+Quick	2057631 ns
+Heap	3407088 ns
+N = 8300
+Sorted
+Quick	1997725 ns
+Heap	3442872 ns
+N = 8400
+Sorted
+Quick	1977112 ns
+Heap	3497723 ns
+N = 8500
+Sorted
+Quick	2007996 ns
+Heap	3553269 ns
+N = 8600
+Sorted
+Quick	2043419 ns
+Heap	3654909 ns
+N = 8700
+Sorted
+Quick	2370806 ns
+Heap	3636911 ns
+N = 8800
+Sorted
+Quick	2065953 ns
+Heap	3679495 ns
+N = 8900
+Sorted
+Quick	2182053 ns
+Heap	3718074 ns
+N = 9000
+Sorted
+Quick	2139404 ns
+Heap	3770969 ns
+N = 9100
+Sorted
+Quick	2170001 ns
+Heap	3819717 ns
+N = 9200
+Sorted
+Quick	2146176 ns
+Heap	3869483 ns
+N = 9300
+Sorted
+Quick	2212029 ns
+Heap	3917741 ns
+N = 9400
+Sorted
+Quick	2206952 ns
+Heap	3957988 ns
+N = 9500
+Sorted
+Quick	2305227 ns
+Heap	4010988 ns
+N = 9600
+Sorted
+Quick	2328391 ns
+Heap	4041957 ns
+N = 9700
+Sorted
+Quick	2290383 ns
+Heap	4095619 ns
+N = 9800
+Sorted
+Quick	2319261 ns
+Heap	4168195 ns
+N = 9900
+Sorted
+Quick	2356187 ns
+Heap	4187319 ns
+N = 10000
+Sorted
+Quick	2351956 ns
+Heap	4244882 ns

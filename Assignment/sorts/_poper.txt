@@ -1,0 +1,700 @@
+N = 100
+Sorted
+Quick	Comparison : 1153, Assginment : 2499, Exchange : 358
+Heap	Comparison : 4063, Assginment : 4736, Exchange : 476
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.75
+N = 200
+Sorted
+Quick	Comparison : 2871, Assginment : 6272, Exchange : 955
+Heap	Comparison : 9557, Assginment : 10952, Exchange : 1164
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.57
+  exchange, quick/heap = 0.82
+N = 300
+Sorted
+Quick	Comparison : 4723, Assginment : 10425, Exchange : 1630
+Heap	Comparison : 15390, Assginment : 17462, Exchange : 1894
+comparison, quick/heap = 0.31
+assignment, quick/heap = 0.60
+  exchange, quick/heap = 0.86
+N = 400
+Sorted
+Quick	Comparison : 6935, Assginment : 15218, Exchange : 2405
+Heap	Comparison : 21873, Assginment : 24658, Exchange : 2722
+comparison, quick/heap = 0.32
+assignment, quick/heap = 0.62
+  exchange, quick/heap = 0.88
+N = 500
+Sorted
+Quick	Comparison : 8116, Assginment : 17760, Exchange : 2764
+Heap	Comparison : 28295, Assginment : 31763, Exchange : 3537
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.56
+  exchange, quick/heap = 0.78
+N = 600
+Sorted
+Quick	Comparison : 9934, Assginment : 21862, Exchange : 3452
+Heap	Comparison : 35169, Assginment : 39323, Exchange : 4417
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.56
+  exchange, quick/heap = 0.78
+N = 700
+Sorted
+Quick	Comparison : 12229, Assginment : 27174, Exchange : 4367
+Heap	Comparison : 42313, Assginment : 47219, Exchange : 5345
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.58
+  exchange, quick/heap = 0.82
+N = 800
+Sorted
+Quick	Comparison : 15841, Assginment : 33536, Exchange : 5177
+Heap	Comparison : 49305, Assginment : 54891, Exchange : 6241
+comparison, quick/heap = 0.32
+assignment, quick/heap = 0.61
+  exchange, quick/heap = 0.83
+N = 900
+Sorted
+Quick	Comparison : 16360, Assginment : 33805, Exchange : 5019
+Heap	Comparison : 56460, Assginment : 62675, Exchange : 7153
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.54
+  exchange, quick/heap = 0.70
+N = 1000
+Sorted
+Quick	Comparison : 17699, Assginment : 37611, Exchange : 5744
+Heap	Comparison : 63828, Assginment : 70795, Exchange : 8113
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.71
+N = 1100
+Sorted
+Quick	Comparison : 21859, Assginment : 46071, Exchange : 7096
+Heap	Comparison : 71099, Assginment : 78803, Exchange : 9057
+comparison, quick/heap = 0.31
+assignment, quick/heap = 0.58
+  exchange, quick/heap = 0.78
+N = 1200
+Sorted
+Quick	Comparison : 24960, Assginment : 53651, Exchange : 8493
+Heap	Comparison : 78714, Assginment : 87035, Exchange : 10033
+comparison, quick/heap = 0.32
+assignment, quick/heap = 0.62
+  exchange, quick/heap = 0.85
+N = 1300
+Sorted
+Quick	Comparison : 25969, Assginment : 55711, Exchange : 8762
+Heap	Comparison : 86269, Assginment : 95267, Exchange : 11009
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.58
+  exchange, quick/heap = 0.80
+N = 1400
+Sorted
+Quick	Comparison : 26492, Assginment : 57319, Exchange : 9033
+Heap	Comparison : 93767, Assginment : 103457, Exchange : 11979
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.75
+N = 1500
+Sorted
+Quick	Comparison : 28640, Assginment : 62386, Exchange : 9922
+Heap	Comparison : 101592, Assginment : 111983, Exchange : 12997
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.56
+  exchange, quick/heap = 0.76
+N = 1600
+Sorted
+Quick	Comparison : 33005, Assginment : 72945, Exchange : 11884
+Heap	Comparison : 109512, Assginment : 120523, Exchange : 14017
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.61
+  exchange, quick/heap = 0.85
+N = 1700
+Sorted
+Quick	Comparison : 32212, Assginment : 70658, Exchange : 11302
+Heap	Comparison : 117286, Assginment : 129049, Exchange : 15035
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.75
+N = 1800
+Sorted
+Quick	Comparison : 34712, Assginment : 75040, Exchange : 11856
+Heap	Comparison : 125581, Assginment : 138093, Exchange : 16127
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.54
+  exchange, quick/heap = 0.74
+N = 1900
+Sorted
+Quick	Comparison : 36014, Assginment : 76856, Exchange : 11950
+Heap	Comparison : 133403, Assginment : 146619, Exchange : 17145
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.52
+  exchange, quick/heap = 0.70
+N = 2000
+Sorted
+Quick	Comparison : 39015, Assginment : 85042, Exchange : 13561
+Heap	Comparison : 141373, Assginment : 155299, Exchange : 18185
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.75
+N = 2100
+Sorted
+Quick	Comparison : 40664, Assginment : 85978, Exchange : 13238
+Heap	Comparison : 149780, Assginment : 164497, Exchange : 19299
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.52
+  exchange, quick/heap = 0.69
+N = 2200
+Sorted
+Quick	Comparison : 42402, Assginment : 90904, Exchange : 14202
+Heap	Comparison : 157749, Assginment : 173065, Exchange : 20323
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.70
+N = 2300
+Sorted
+Quick	Comparison : 46808, Assginment : 99607, Exchange : 15577
+Heap	Comparison : 165998, Assginment : 181997, Exchange : 21399
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.73
+N = 2400
+Sorted
+Quick	Comparison : 47148, Assginment : 99786, Exchange : 15454
+Heap	Comparison : 174108, Assginment : 190733, Exchange : 22447
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.52
+  exchange, quick/heap = 0.69
+N = 2500
+Sorted
+Quick	Comparison : 50452, Assginment : 107602, Exchange : 16846
+Heap	Comparison : 182478, Assginment : 199903, Exchange : 23557
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.54
+  exchange, quick/heap = 0.72
+N = 2600
+Sorted
+Quick	Comparison : 53262, Assginment : 111393, Exchange : 17061
+Heap	Comparison : 190945, Assginment : 209059, Exchange : 24665
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.69
+N = 2700
+Sorted
+Quick	Comparison : 59115, Assginment : 127905, Exchange : 20518
+Heap	Comparison : 199490, Assginment : 218257, Exchange : 25779
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.59
+  exchange, quick/heap = 0.80
+N = 2800
+Sorted
+Quick	Comparison : 60825, Assginment : 129852, Exchange : 20513
+Heap	Comparison : 208122, Assginment : 227581, Exchange : 26911
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.57
+  exchange, quick/heap = 0.76
+N = 2900
+Sorted
+Quick	Comparison : 61202, Assginment : 132287, Exchange : 21091
+Heap	Comparison : 216314, Assginment : 236429, Exchange : 27975
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.56
+  exchange, quick/heap = 0.75
+N = 3000
+Sorted
+Quick	Comparison : 63213, Assginment : 133608, Exchange : 20801
+Heap	Comparison : 224818, Assginment : 245697, Exchange : 29099
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.54
+  exchange, quick/heap = 0.71
+N = 3100
+Sorted
+Quick	Comparison : 64958, Assginment : 139460, Exchange : 22090
+Heap	Comparison : 233461, Assginment : 255077, Exchange : 30239
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.73
+N = 3200
+Sorted
+Quick	Comparison : 65739, Assginment : 139602, Exchange : 21785
+Heap	Comparison : 241894, Assginment : 264163, Exchange : 31337
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.70
+N = 3300
+Sorted
+Quick	Comparison : 70771, Assginment : 149434, Exchange : 23273
+Heap	Comparison : 250464, Assginment : 273473, Exchange : 32467
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.72
+N = 3400
+Sorted
+Quick	Comparison : 78051, Assginment : 160593, Exchange : 24458
+Heap	Comparison : 258947, Assginment : 282657, Exchange : 33579
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.57
+  exchange, quick/heap = 0.73
+N = 3500
+Sorted
+Quick	Comparison : 82878, Assginment : 180969, Exchange : 29585
+Heap	Comparison : 267696, Assginment : 292128, Exchange : 34732
+comparison, quick/heap = 0.31
+assignment, quick/heap = 0.62
+  exchange, quick/heap = 0.85
+N = 3600
+Sorted
+Quick	Comparison : 83281, Assginment : 178706, Exchange : 28595
+Heap	Comparison : 276109, Assginment : 301200, Exchange : 35828
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.59
+  exchange, quick/heap = 0.80
+N = 3700
+Sorted
+Quick	Comparison : 79506, Assginment : 166649, Exchange : 25737
+Heap	Comparison : 284818, Assginment : 310706, Exchange : 36986
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.54
+  exchange, quick/heap = 0.70
+N = 3800
+Sorted
+Quick	Comparison : 85753, Assginment : 184530, Exchange : 29547
+Heap	Comparison : 293228, Assginment : 319694, Exchange : 38070
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.58
+  exchange, quick/heap = 0.78
+N = 3900
+Sorted
+Quick	Comparison : 83221, Assginment : 175867, Exchange : 27426
+Heap	Comparison : 302227, Assginment : 329466, Exchange : 39266
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.70
+N = 4000
+Sorted
+Quick	Comparison : 86189, Assginment : 183642, Exchange : 28903
+Heap	Comparison : 311093, Assginment : 339126, Exchange : 40446
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.54
+  exchange, quick/heap = 0.71
+N = 4100
+Sorted
+Quick	Comparison : 96538, Assginment : 210982, Exchange : 34512
+Heap	Comparison : 319612, Assginment : 348268, Exchange : 41552
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.61
+  exchange, quick/heap = 0.83
+N = 4200
+Sorted
+Quick	Comparison : 90120, Assginment : 192015, Exchange : 30261
+Heap	Comparison : 328417, Assginment : 357732, Exchange : 42704
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.54
+  exchange, quick/heap = 0.71
+N = 4300
+Sorted
+Quick	Comparison : 92379, Assginment : 194745, Exchange : 30302
+Heap	Comparison : 337655, Assginment : 367812, Exchange : 43944
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.69
+N = 4400
+Sorted
+Quick	Comparison : 94730, Assginment : 200623, Exchange : 31439
+Heap	Comparison : 345989, Assginment : 376646, Exchange : 45006
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.70
+N = 4500
+Sorted
+Quick	Comparison : 104175, Assginment : 223353, Exchange : 35690
+Heap	Comparison : 355475, Assginment : 386950, Exchange : 46278
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.58
+  exchange, quick/heap = 0.77
+N = 4600
+Sorted
+Quick	Comparison : 104045, Assginment : 221474, Exchange : 35071
+Heap	Comparison : 364417, Assginment : 396638, Exchange : 47462
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.56
+  exchange, quick/heap = 0.74
+N = 4700
+Sorted
+Quick	Comparison : 106489, Assginment : 222219, Exchange : 34414
+Heap	Comparison : 373099, Assginment : 405892, Exchange : 48584
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.71
+N = 4800
+Sorted
+Quick	Comparison : 107069, Assginment : 220762, Exchange : 33667
+Heap	Comparison : 382049, Assginment : 415510, Exchange : 49758
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.68
+N = 4900
+Sorted
+Quick	Comparison : 111687, Assginment : 233710, Exchange : 36337
+Heap	Comparison : 391105, Assginment : 425282, Exchange : 50954
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.71
+N = 5000
+Sorted
+Quick	Comparison : 110823, Assginment : 229745, Exchange : 35178
+Heap	Comparison : 400184, Assginment : 435068, Exchange : 52152
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.67
+N = 5100
+Sorted
+Quick	Comparison : 114794, Assginment : 245158, Exchange : 38896
+Heap	Comparison : 409054, Assginment : 444504, Exchange : 53300
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.73
+N = 5200
+Sorted
+Quick	Comparison : 126592, Assginment : 271874, Exchange : 43790
+Heap	Comparison : 418081, Assginment : 454262, Exchange : 54494
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.60
+  exchange, quick/heap = 0.80
+N = 5300
+Sorted
+Quick	Comparison : 117423, Assginment : 248154, Exchange : 38869
+Heap	Comparison : 427230, Assginment : 464076, Exchange : 55696
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.70
+N = 5400
+Sorted
+Quick	Comparison : 121131, Assginment : 255020, Exchange : 39807
+Heap	Comparison : 436448, Assginment : 474016, Exchange : 56916
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.54
+  exchange, quick/heap = 0.70
+N = 5500
+Sorted
+Quick	Comparison : 125242, Assginment : 260382, Exchange : 40144
+Heap	Comparison : 445952, Assginment : 484278, Exchange : 58182
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.54
+  exchange, quick/heap = 0.69
+N = 5600
+Sorted
+Quick	Comparison : 125801, Assginment : 261254, Exchange : 40171
+Heap	Comparison : 454273, Assginment : 493126, Exchange : 59246
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.68
+N = 5700
+Sorted
+Quick	Comparison : 136829, Assginment : 289868, Exchange : 45937
+Heap	Comparison : 463681, Assginment : 503262, Exchange : 60494
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.58
+  exchange, quick/heap = 0.76
+N = 5800
+Sorted
+Quick	Comparison : 148405, Assginment : 310416, Exchange : 48865
+Heap	Comparison : 473098, Assginment : 513482, Exchange : 61754
+comparison, quick/heap = 0.31
+assignment, quick/heap = 0.60
+  exchange, quick/heap = 0.79
+N = 5900
+Sorted
+Quick	Comparison : 139460, Assginment : 291987, Exchange : 45565
+Heap	Comparison : 482249, Assginment : 523352, Exchange : 62964
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.56
+  exchange, quick/heap = 0.72
+N = 6000
+Sorted
+Quick	Comparison : 145645, Assginment : 303987, Exchange : 47450
+Heap	Comparison : 491455, Assginment : 533250, Exchange : 64178
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.57
+  exchange, quick/heap = 0.74
+N = 6100
+Sorted
+Quick	Comparison : 142736, Assginment : 295956, Exchange : 45672
+Heap	Comparison : 500641, Assginment : 543134, Exchange : 65390
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.54
+  exchange, quick/heap = 0.70
+N = 6200
+Sorted
+Quick	Comparison : 160831, Assginment : 339205, Exchange : 53926
+Heap	Comparison : 509633, Assginment : 552752, Exchange : 66564
+comparison, quick/heap = 0.32
+assignment, quick/heap = 0.61
+  exchange, quick/heap = 0.81
+N = 6300
+Sorted
+Quick	Comparison : 157125, Assginment : 338452, Exchange : 54825
+Heap	Comparison : 518804, Assginment : 562552, Exchange : 67764
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.60
+  exchange, quick/heap = 0.81
+N = 6400
+Sorted
+Quick	Comparison : 156020, Assginment : 323399, Exchange : 50145
+Heap	Comparison : 528433, Assginment : 572954, Exchange : 69050
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.56
+  exchange, quick/heap = 0.73
+N = 6500
+Sorted
+Quick	Comparison : 148404, Assginment : 306836, Exchange : 46992
+Heap	Comparison : 537628, Assginment : 582922, Exchange : 70274
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.67
+N = 6600
+Sorted
+Quick	Comparison : 155131, Assginment : 328661, Exchange : 52022
+Heap	Comparison : 546729, Assginment : 592568, Exchange : 71452
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.73
+N = 6700
+Sorted
+Quick	Comparison : 151023, Assginment : 317015, Exchange : 49380
+Heap	Comparison : 556154, Assginment : 602802, Exchange : 72714
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.68
+N = 6800
+Sorted
+Quick	Comparison : 154097, Assginment : 315744, Exchange : 47837
+Heap	Comparison : 565368, Assginment : 612714, Exchange : 73930
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.52
+  exchange, quick/heap = 0.65
+N = 6900
+Sorted
+Quick	Comparison : 157344, Assginment : 330087, Exchange : 51445
+Heap	Comparison : 574247, Assginment : 622150, Exchange : 75078
+comparison, quick/heap = 0.27
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.69
+N = 7000
+Sorted
+Quick	Comparison : 163803, Assginment : 332505, Exchange : 50030
+Heap	Comparison : 584007, Assginment : 632776, Exchange : 76396
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.53
+  exchange, quick/heap = 0.65
+N = 7100
+Sorted
+Quick	Comparison : 168447, Assginment : 356118, Exchange : 56269
+Heap	Comparison : 593034, Assginment : 642576, Exchange : 77596
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.73
+N = 7200
+Sorted
+Quick	Comparison : 170499, Assginment : 361840, Exchange : 57367
+Heap	Comparison : 602642, Assginment : 652768, Exchange : 78852
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.73
+N = 7300
+Sorted
+Quick	Comparison : 177577, Assginment : 377885, Exchange : 60280
+Heap	Comparison : 611863, Assginment : 662666, Exchange : 80066
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.57
+  exchange, quick/heap = 0.75
+N = 7400
+Sorted
+Quick	Comparison : 176643, Assginment : 369281, Exchange : 57590
+Heap	Comparison : 621612, Assginment : 673320, Exchange : 81388
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.71
+N = 7500
+Sorted
+Quick	Comparison : 179748, Assginment : 374853, Exchange : 58427
+Heap	Comparison : 630585, Assginment : 682910, Exchange : 82558
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.55
+  exchange, quick/heap = 0.71
+N = 7600
+Sorted
+Quick	Comparison : 180214, Assginment : 375611, Exchange : 58391
+Heap	Comparison : 639745, Assginment : 692696, Exchange : 83756
+comparison, quick/heap = 0.28
+assignment, quick/heap = 0.54
+  exchange, quick/heap = 0.70
+N = 7700
+Sorted
+Quick	Comparison : 186913, Assginment : 390335, Exchange : 60970
+Heap	Comparison : 649006, Assginment : 702664, Exchange : 84980
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.56
+  exchange, quick/heap = 0.72
+N = 7800
+Sorted
+Quick	Comparison : 196677, Assginment : 421320, Exchange : 67973
+Heap	Comparison : 658271, Assginment : 712618, Exchange : 86202
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.59
+  exchange, quick/heap = 0.79
+N = 7900
+Sorted
+Quick	Comparison : 205639, Assginment : 438486, Exchange : 70585
+Heap	Comparison : 667185, Assginment : 722152, Exchange : 87364
+comparison, quick/heap = 0.31
+assignment, quick/heap = 0.61
+  exchange, quick/heap = 0.81
+N = 8000
+Sorted
+Quick	Comparison : 209910, Assginment : 450701, Exchange : 73165
+Heap	Comparison : 676838, Assginment : 732428, Exchange : 88632
+comparison, quick/heap = 0.31
+assignment, quick/heap = 0.62
+  exchange, quick/heap = 0.83
+N = 8100
+Sorted
+Quick	Comparison : 214635, Assginment : 460748, Exchange : 74847
+Heap	Comparison : 686316, Assginment : 742718, Exchange : 89902
+comparison, quick/heap = 0.31
+assignment, quick/heap = 0.62
+  exchange, quick/heap = 0.83
+N = 8200
+Sorted
+Quick	Comparison : 204864, Assginment : 433335, Exchange : 68853
+Heap	Comparison : 695674, Assginment : 752840, Exchange : 91148
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.58
+  exchange, quick/heap = 0.76
+N = 8300
+Sorted
+Quick	Comparison : 239271, Assginment : 530372, Exchange : 89675
+Heap	Comparison : 705165, Assginment : 763074, Exchange : 92410
+comparison, quick/heap = 0.34
+assignment, quick/heap = 0.70
+  exchange, quick/heap = 0.97
+N = 8400
+Sorted
+Quick	Comparison : 225213, Assginment : 476461, Exchange : 76280
+Heap	Comparison : 714891, Assginment : 773420, Exchange : 93688
+comparison, quick/heap = 0.32
+assignment, quick/heap = 0.62
+  exchange, quick/heap = 0.81
+N = 8500
+Sorted
+Quick	Comparison : 241152, Assginment : 524876, Exchange : 87032
+Heap	Comparison : 724150, Assginment : 783332, Exchange : 94904
+comparison, quick/heap = 0.33
+assignment, quick/heap = 0.67
+  exchange, quick/heap = 0.92
+N = 8600
+Sorted
+Quick	Comparison : 224293, Assginment : 471689, Exchange : 74804
+Heap	Comparison : 733456, Assginment : 793174, Exchange : 96110
+comparison, quick/heap = 0.31
+assignment, quick/heap = 0.59
+  exchange, quick/heap = 0.78
+N = 8700
+Sorted
+Quick	Comparison : 215515, Assginment : 446330, Exchange : 69181
+Heap	Comparison : 743362, Assginment : 803814, Exchange : 97430
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.56
+  exchange, quick/heap = 0.71
+N = 8800
+Sorted
+Quick	Comparison : 227877, Assginment : 479791, Exchange : 76178
+Heap	Comparison : 752852, Assginment : 813978, Exchange : 98682
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.59
+  exchange, quick/heap = 0.77
+N = 8900
+Sorted
+Quick	Comparison : 231263, Assginment : 493986, Exchange : 79661
+Heap	Comparison : 762909, Assginment : 824898, Exchange : 100042
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.60
+  exchange, quick/heap = 0.80
+N = 9000
+Sorted
+Quick	Comparison : 223944, Assginment : 479740, Exchange : 77268
+Heap	Comparison : 772657, Assginment : 835398, Exchange : 101342
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.57
+  exchange, quick/heap = 0.76
+N = 9100
+Sorted
+Quick	Comparison : 240280, Assginment : 517168, Exchange : 84264
+Heap	Comparison : 782560, Assginment : 845870, Exchange : 102638
+comparison, quick/heap = 0.31
+assignment, quick/heap = 0.61
+  exchange, quick/heap = 0.82
+N = 9200
+Sorted
+Quick	Comparison : 226893, Assginment : 490705, Exchange : 79824
+Heap	Comparison : 792330, Assginment : 856356, Exchange : 103936
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.57
+  exchange, quick/heap = 0.77
+N = 9300
+Sorted
+Quick	Comparison : 230754, Assginment : 482337, Exchange : 75589
+Heap	Comparison : 802006, Assginment : 866688, Exchange : 105212
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.56
+  exchange, quick/heap = 0.72
+N = 9400
+Sorted
+Quick	Comparison : 238873, Assginment : 498295, Exchange : 78118
+Heap	Comparison : 811885, Assginment : 877328, Exchange : 106532
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.57
+  exchange, quick/heap = 0.73
+N = 9500
+Sorted
+Quick	Comparison : 246701, Assginment : 540760, Exchange : 89577
+Heap	Comparison : 821774, Assginment : 887954, Exchange : 107850
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.61
+  exchange, quick/heap = 0.83
+N = 9600
+Sorted
+Quick	Comparison : 242344, Assginment : 520621, Exchange : 84251
+Heap	Comparison : 830976, Assginment : 897782, Exchange : 109054
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.58
+  exchange, quick/heap = 0.77
+N = 9700
+Sorted
+Quick	Comparison : 255330, Assginment : 547226, Exchange : 88628
+Heap	Comparison : 840559, Assginment : 907946, Exchange : 110306
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.60
+  exchange, quick/heap = 0.80
+N = 9800
+Sorted
+Quick	Comparison : 265003, Assginment : 568599, Exchange : 92488
+Heap	Comparison : 850322, Assginment : 918572, Exchange : 111624
+comparison, quick/heap = 0.31
+assignment, quick/heap = 0.62
+  exchange, quick/heap = 0.83
+N = 9900
+Sorted
+Quick	Comparison : 255582, Assginment : 527201, Exchange : 81801
+Heap	Comparison : 859777, Assginment : 928470, Exchange : 112838
+comparison, quick/heap = 0.30
+assignment, quick/heap = 0.57
+  exchange, quick/heap = 0.72
+N = 10000
+Sorted
+Quick	Comparison : 254624, Assginment : 528770, Exchange : 82470
+Heap	Comparison : 870131, Assginment : 939684, Exchange : 114240
+comparison, quick/heap = 0.29
+assignment, quick/heap = 0.56
+  exchange, quick/heap = 0.72

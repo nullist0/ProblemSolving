@@ -1,3 +1,3 @@
-/home/leepyoungwon/tests/sorts/CMakeFiles/rebuild_cache.dir
-/home/leepyoungwon/tests/sorts/CMakeFiles/sort.out.dir
-/home/leepyoungwon/tests/sorts/CMakeFiles/edit_cache.dir
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/CMakeFiles/rebuild_cache.dir
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/CMakeFiles/sort.out.dir
+/home/leepyoungwon/git/AlgorithmStudy/Assignment/sorts/CMakeFiles/edit_cache.dir

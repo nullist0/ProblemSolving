@@ -1,0 +1,400 @@
+N = 100
+Sorted
+Quick	Comparison : 1166, Assginment : 2636, Exchange : 402
+Heap	Comparison : 4080, Assginment : 4771, Exchange : 481
+N = 200
+Sorted
+Quick	Comparison : 3023, Assginment : 6944, Exchange : 1131
+Heap	Comparison : 9517, Assginment : 10903, Exchange : 1157
+N = 300
+Sorted
+Quick	Comparison : 4297, Assginment : 9533, Exchange : 1484
+Heap	Comparison : 15596, Assginment : 17707, Exchange : 1929
+N = 400
+Sorted
+Quick	Comparison : 6834, Assginment : 13832, Exchange : 1982
+Heap	Comparison : 21720, Assginment : 24469, Exchange : 2695
+N = 500
+Sorted
+Quick	Comparison : 8746, Assginment : 19149, Exchange : 3021
+Heap	Comparison : 28264, Assginment : 31693, Exchange : 3527
+N = 600
+Sorted
+Quick	Comparison : 10373, Assginment : 22162, Exchange : 3407
+Heap	Comparison : 35142, Assginment : 39323, Exchange : 4417
+N = 700
+Sorted
+Quick	Comparison : 12980, Assginment : 27996, Exchange : 4376
+Heap	Comparison : 42144, Assginment : 46939, Exchange : 5305
+N = 800
+Sorted
+Quick	Comparison : 14619, Assginment : 31689, Exchange : 4974
+Heap	Comparison : 49216, Assginment : 54793, Exchange : 6227
+N = 900
+Sorted
+Quick	Comparison : 15297, Assginment : 33683, Exchange : 5326
+Heap	Comparison : 56259, Assginment : 62507, Exchange : 7129
+N = 1000
+Sorted
+Quick	Comparison : 17157, Assginment : 36473, Exchange : 5544
+Heap	Comparison : 63676, Assginment : 70655, Exchange : 8093
+N = 1100
+Sorted
+Quick	Comparison : 19100, Assginment : 41016, Exchange : 6324
+Heap	Comparison : 71207, Assginment : 78887, Exchange : 9069
+N = 1200
+Sorted
+Quick	Comparison : 21134, Assginment : 44854, Exchange : 6848
+Heap	Comparison : 78401, Assginment : 86713, Exchange : 9987
+N = 1300
+Sorted
+Quick	Comparison : 23402, Assginment : 50014, Exchange : 7688
+Heap	Comparison : 86246, Assginment : 95253, Exchange : 11007
+N = 1400
+Sorted
+Quick	Comparison : 28780, Assginment : 62270, Exchange : 9914
+Heap	Comparison : 94041, Assginment : 103779, Exchange : 12025
+N = 1500
+Sorted
+Quick	Comparison : 27715, Assginment : 58893, Exchange : 9062
+Heap	Comparison : 101817, Assginment : 112277, Exchange : 13039
+N = 1600
+Sorted
+Quick	Comparison : 30612, Assginment : 67020, Exchange : 10720
+Heap	Comparison : 109529, Assginment : 120621, Exchange : 14031
+N = 1700
+Sorted
+Quick	Comparison : 32352, Assginment : 68643, Exchange : 10573
+Heap	Comparison : 117624, Assginment : 129441, Exchange : 15091
+N = 1800
+Sorted
+Quick	Comparison : 35095, Assginment : 74129, Exchange : 11418
+Heap	Comparison : 125409, Assginment : 137939, Exchange : 16105
+N = 1900
+Sorted
+Quick	Comparison : 35813, Assginment : 76249, Exchange : 11780
+Heap	Comparison : 133259, Assginment : 146451, Exchange : 17121
+N = 2000
+Sorted
+Quick	Comparison : 38668, Assginment : 82624, Exchange : 12876
+Heap	Comparison : 141001, Assginment : 154837, Exchange : 18119
+N = 2100
+Sorted
+Quick	Comparison : 42418, Assginment : 87888, Exchange : 13282
+Heap	Comparison : 149306, Assginment : 163909, Exchange : 19215
+N = 2200
+Sorted
+Quick	Comparison : 46528, Assginment : 99373, Exchange : 15635
+Heap	Comparison : 157359, Assginment : 172603, Exchange : 20257
+N = 2300
+Sorted
+Quick	Comparison : 46165, Assginment : 97289, Exchange : 15000
+Heap	Comparison : 165730, Assginment : 181633, Exchange : 21347
+N = 2400
+Sorted
+Quick	Comparison : 51460, Assginment : 109618, Exchange : 17242
+Heap	Comparison : 173650, Assginment : 190215, Exchange : 22373
+N = 2500
+Sorted
+Quick	Comparison : 51832, Assginment : 108776, Exchange : 16764
+Heap	Comparison : 182499, Assginment : 199945, Exchange : 23563
+N = 2600
+Sorted
+Quick	Comparison : 59651, Assginment : 124967, Exchange : 19500
+Heap	Comparison : 190672, Assginment : 208765, Exchange : 24623
+N = 2700
+Sorted
+Quick	Comparison : 53729, Assginment : 111137, Exchange : 16732
+Heap	Comparison : 199045, Assginment : 217767, Exchange : 25709
+N = 2800
+Sorted
+Quick	Comparison : 58610, Assginment : 124907, Exchange : 19631
+Heap	Comparison : 207565, Assginment : 227021, Exchange : 26831
+N = 2900
+Sorted
+Quick	Comparison : 61945, Assginment : 132114, Exchange : 20787
+Heap	Comparison : 216219, Assginment : 236457, Exchange : 27979
+N = 3000
+Sorted
+Quick	Comparison : 62972, Assginment : 134725, Exchange : 21235
+Heap	Comparison : 224496, Assginment : 245333, Exchange : 29047
+N = 3100
+Sorted
+Quick	Comparison : 68684, Assginment : 145292, Exchange : 22748
+Heap	Comparison : 233116, Assginment : 254699, Exchange : 30185
+N = 3200
+Sorted
+Quick	Comparison : 70967, Assginment : 151883, Exchange : 24144
+Heap	Comparison : 241494, Assginment : 263757, Exchange : 31279
+N = 3300
+Sorted
+Quick	Comparison : 67597, Assginment : 140454, Exchange : 21323
+Heap	Comparison : 250032, Assginment : 272927, Exchange : 32389
+N = 3400
+Sorted
+Quick	Comparison : 74040, Assginment : 156249, Exchange : 24419
+Heap	Comparison : 258818, Assginment : 282489, Exchange : 33555
+N = 3500
+Sorted
+Quick	Comparison : 79952, Assginment : 164533, Exchange : 25103
+Heap	Comparison : 267348, Assginment : 291645, Exchange : 34663
+N = 3600
+Sorted
+Quick	Comparison : 84533, Assginment : 175941, Exchange : 27244
+Heap	Comparison : 276293, Assginment : 301417, Exchange : 35859
+N = 3700
+Sorted
+Quick	Comparison : 79398, Assginment : 161533, Exchange : 24097
+Heap	Comparison : 284667, Assginment : 310447, Exchange : 36949
+N = 3800
+Sorted
+Quick	Comparison : 82598, Assginment : 169460, Exchange : 25602
+Heap	Comparison : 293499, Assginment : 319953, Exchange : 38107
+N = 3900
+Sorted
+Quick	Comparison : 87289, Assginment : 177473, Exchange : 26584
+Heap	Comparison : 302230, Assginment : 329361, Exchange : 39251
+N = 4000
+Sorted
+Quick	Comparison : 90602, Assginment : 186282, Exchange : 28328
+Heap	Comparison : 310600, Assginment : 338489, Exchange : 40355
+N = 4100
+Sorted
+Quick	Comparison : 93207, Assginment : 192290, Exchange : 29389
+Heap	Comparison : 319236, Assginment : 347757, Exchange : 41479
+N = 4200
+Sorted
+Quick	Comparison : 95807, Assginment : 195661, Exchange : 29574
+Heap	Comparison : 328032, Assginment : 357305, Exchange : 42643
+N = 4300
+Sorted
+Quick	Comparison : 92302, Assginment : 191598, Exchange : 29276
+Heap	Comparison : 336900, Assginment : 366811, Exchange : 43801
+N = 4400
+Sorted
+Quick	Comparison : 97277, Assginment : 203336, Exchange : 31461
+Heap	Comparison : 345686, Assginment : 376163, Exchange : 44937
+N = 4500
+Sorted
+Quick	Comparison : 105350, Assginment : 210323, Exchange : 30991
+Heap	Comparison : 354585, Assginment : 385823, Exchange : 46117
+N = 4600
+Sorted
+Quick	Comparison : 103211, Assginment : 212925, Exchange : 32482
+Heap	Comparison : 363705, Assginment : 395707, Exchange : 47329
+N = 4700
+Sorted
+Quick	Comparison : 108000, Assginment : 223418, Exchange : 34294
+Heap	Comparison : 372770, Assginment : 405395, Exchange : 48513
+N = 4800
+Sorted
+Quick	Comparison : 102567, Assginment : 210015, Exchange : 31556
+Heap	Comparison : 381841, Assginment : 415209, Exchange : 49715
+N = 4900
+Sorted
+Quick	Comparison : 109341, Assginment : 230370, Exchange : 35975
+Heap	Comparison : 391352, Assginment : 425457, Exchange : 50979
+N = 5000
+Sorted
+Quick	Comparison : 115962, Assginment : 244879, Exchange : 38511
+Heap	Comparison : 400000, Assginment : 434809, Exchange : 52115
+N = 5100
+Sorted
+Quick	Comparison : 111736, Assginment : 230592, Exchange : 35068
+Heap	Comparison : 409309, Assginment : 444777, Exchange : 53339
+N = 5200
+Sorted
+Quick	Comparison : 113849, Assginment : 237900, Exchange : 36713
+Heap	Comparison : 418036, Assginment : 454157, Exchange : 54479
+N = 5300
+Sorted
+Quick	Comparison : 124582, Assginment : 265842, Exchange : 42384
+Heap	Comparison : 426984, Assginment : 463803, Exchange : 55657
+N = 5400
+Sorted
+Quick	Comparison : 119940, Assginment : 240699, Exchange : 35433
+Heap	Comparison : 436460, Assginment : 474037, Exchange : 56919
+N = 5500
+Sorted
+Quick	Comparison : 129695, Assginment : 265366, Exchange : 40289
+Heap	Comparison : 445499, Assginment : 483711, Exchange : 58101
+N = 5600
+Sorted
+Quick	Comparison : 141131, Assginment : 301012, Exchange : 48331
+Heap	Comparison : 454371, Assginment : 493203, Exchange : 59257
+N = 5700
+Sorted
+Quick	Comparison : 135011, Assginment : 281421, Exchange : 43726
+Heap	Comparison : 463518, Assginment : 503045, Exchange : 60463
+N = 5800
+Sorted
+Quick	Comparison : 136506, Assginment : 286203, Exchange : 44735
+Heap	Comparison : 472651, Assginment : 512915, Exchange : 61673
+N = 5900
+Sorted
+Quick	Comparison : 140152, Assginment : 297170, Exchange : 47074
+Heap	Comparison : 482044, Assginment : 523009, Exchange : 62915
+N = 6000
+Sorted
+Quick	Comparison : 146167, Assginment : 301545, Exchange : 46486
+Heap	Comparison : 490704, Assginment : 532193, Exchange : 64027
+N = 6100
+Sorted
+Quick	Comparison : 145707, Assginment : 306718, Exchange : 48233
+Heap	Comparison : 500346, Assginment : 542581, Exchange : 65311
+N = 6200
+Sorted
+Quick	Comparison : 149591, Assginment : 315611, Exchange : 49864
+Heap	Comparison : 509695, Assginment : 552703, Exchange : 66557
+N = 6300
+Sorted
+Quick	Comparison : 143216, Assginment : 297346, Exchange : 45758
+Heap	Comparison : 518871, Assginment : 562517, Exchange : 67759
+N = 6400
+Sorted
+Quick	Comparison : 141018, Assginment : 291349, Exchange : 44433
+Heap	Comparison : 528338, Assginment : 572709, Exchange : 69015
+N = 6500
+Sorted
+Quick	Comparison : 155410, Assginment : 309912, Exchange : 45702
+Heap	Comparison : 537424, Assginment : 582481, Exchange : 70211
+N = 6600
+Sorted
+Quick	Comparison : 155975, Assginment : 326093, Exchange : 50826
+Heap	Comparison : 546799, Assginment : 592617, Exchange : 71459
+N = 6700
+Sorted
+Quick	Comparison : 157076, Assginment : 330569, Exchange : 51851
+Heap	Comparison : 555790, Assginment : 602207, Exchange : 72629
+N = 6800
+Sorted
+Quick	Comparison : 163784, Assginment : 332269, Exchange : 50083
+Heap	Comparison : 564954, Assginment : 612105, Exchange : 73843
+N = 6900
+Sorted
+Quick	Comparison : 165760, Assginment : 337923, Exchange : 51253
+Heap	Comparison : 574684, Assginment : 622647, Exchange : 75149
+N = 7000
+Sorted
+Quick	Comparison : 164186, Assginment : 342044, Exchange : 53086
+Heap	Comparison : 583829, Assginment : 632349, Exchange : 76335
+N = 7100
+Sorted
+Quick	Comparison : 168794, Assginment : 349246, Exchange : 53784
+Heap	Comparison : 593213, Assginment : 642443, Exchange : 77577
+N = 7200
+Sorted
+Quick	Comparison : 170083, Assginment : 358897, Exchange : 56530
+Heap	Comparison : 602847, Assginment : 652901, Exchange : 78871
+N = 7300
+Sorted
+Quick	Comparison : 171589, Assginment : 348649, Exchange : 52548
+Heap	Comparison : 612129, Assginment : 662953, Exchange : 80107
+N = 7400
+Sorted
+Quick	Comparison : 178144, Assginment : 371839, Exchange : 58009
+Heap	Comparison : 620651, Assginment : 671969, Exchange : 81195
+N = 7500
+Sorted
+Quick	Comparison : 177671, Assginment : 363757, Exchange : 55322
+Heap	Comparison : 630196, Assginment : 682287, Exchange : 82469
+N = 7600
+Sorted
+Quick	Comparison : 173173, Assginment : 362392, Exchange : 56325
+Heap	Comparison : 639523, Assginment : 692213, Exchange : 83687
+N = 7700
+Sorted
+Quick	Comparison : 189417, Assginment : 395485, Exchange : 61844
+Heap	Comparison : 648993, Assginment : 702531, Exchange : 84961
+N = 7800
+Sorted
+Quick	Comparison : 188298, Assginment : 378417, Exchange : 56457
+Heap	Comparison : 658054, Assginment : 712233, Exchange : 86147
+N = 7900
+Sorted
+Quick	Comparison : 196749, Assginment : 400315, Exchange : 60830
+Heap	Comparison : 667909, Assginment : 722999, Exchange : 87485
+N = 8000
+Sorted
+Quick	Comparison : 202870, Assginment : 421209, Exchange : 65689
+Heap	Comparison : 677318, Assginment : 733121, Exchange : 88731
+N = 8100
+Sorted
+Quick	Comparison : 185613, Assginment : 383445, Exchange : 58712
+Heap	Comparison : 686190, Assginment : 742403, Exchange : 89857
+N = 8200
+Sorted
+Quick	Comparison : 210172, Assginment : 440475, Exchange : 69461
+Heap	Comparison : 695261, Assginment : 752091, Exchange : 91041
+N = 8300
+Sorted
+Quick	Comparison : 207225, Assginment : 432897, Exchange : 67820
+Heap	Comparison : 704815, Assginment : 762241, Exchange : 92291
+N = 8400
+Sorted
+Quick	Comparison : 222288, Assginment : 470509, Exchange : 75283
+Heap	Comparison : 714905, Assginment : 773203, Exchange : 93657
+N = 8500
+Sorted
+Quick	Comparison : 217552, Assginment : 448171, Exchange : 69289
+Heap	Comparison : 724142, Assginment : 783171, Exchange : 94881
+N = 8600
+Sorted
+Quick	Comparison : 199033, Assginment : 407189, Exchange : 61732
+Heap	Comparison : 733815, Assginment : 793545, Exchange : 96163
+N = 8700
+Sorted
+Quick	Comparison : 212570, Assginment : 428926, Exchange : 64380
+Heap	Comparison : 742987, Assginment : 803205, Exchange : 97343
+N = 8800
+Sorted
+Quick	Comparison : 223129, Assginment : 460409, Exchange : 71228
+Heap	Comparison : 752562, Assginment : 813565, Exchange : 98623
+N = 8900
+Sorted
+Quick	Comparison : 218164, Assginment : 452751, Exchange : 70281
+Heap	Comparison : 762052, Assginment : 823603, Exchange : 99857
+N = 9000
+Sorted
+Quick	Comparison : 226364, Assginment : 451351, Exchange : 67025
+Heap	Comparison : 772181, Assginment : 834481, Exchange : 101211
+N = 9100
+Sorted
+Quick	Comparison : 221619, Assginment : 465606, Exchange : 73301
+Heap	Comparison : 781944, Assginment : 844939, Exchange : 102505
+N = 9200
+Sorted
+Quick	Comparison : 239822, Assginment : 513089, Exchange : 82965
+Heap	Comparison : 791657, Assginment : 855425, Exchange : 103803
+N = 9300
+Sorted
+Quick	Comparison : 237494, Assginment : 497535, Exchange : 78363
+Heap	Comparison : 801276, Assginment : 865547, Exchange : 105049
+N = 9400
+Sorted
+Quick	Comparison : 258321, Assginment : 551757, Exchange : 89464
+Heap	Comparison : 810807, Assginment : 875767, Exchange : 106309
+N = 9500
+Sorted
+Quick	Comparison : 252314, Assginment : 528850, Exchange : 83772
+Heap	Comparison : 820878, Assginment : 886743, Exchange : 107677
+N = 9600
+Sorted
+Quick	Comparison : 265642, Assginment : 556288, Exchange : 88334
+Heap	Comparison : 830460, Assginment : 896879, Exchange : 108925
+N = 9700
+Sorted
+Quick	Comparison : 265176, Assginment : 581830, Exchange : 96930
+Heap	Comparison : 839929, Assginment : 906917, Exchange : 110159
+N = 9800
+Sorted
+Quick	Comparison : 270482, Assginment : 578449, Exchange : 93937
+Heap	Comparison : 849760, Assginment : 917515, Exchange : 111473
+N = 9900
+Sorted
+Quick	Comparison : 254627, Assginment : 537359, Exchange : 85424
+Heap	Comparison : 859591, Assginment : 928113, Exchange : 112787
+N = 10000
+Sorted
+Quick	Comparison : 253996, Assginment : 527466, Exchange : 82246
+Heap	Comparison : 869396, Assginment : 938697, Exchange : 114099

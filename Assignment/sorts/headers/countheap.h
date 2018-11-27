@@ -1,8 +1,8 @@
 class countHeapsort{
 public:
-    countHeapsort() : comparison(0), assignment(0){}
+    countHeapsort() : comparison(0), assignment(0), exchange(0){}
     int *heap, N;
-    int comparison, assignment;
+    int comparison, assignment, exchange;
     void hsort(int, int*, int*);
     void makeheap(int);
     void removekeys(int, int, int*);

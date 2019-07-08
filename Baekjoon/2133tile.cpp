@@ -2,29 +2,24 @@
 
 using namespace std;
 
-#define THREE 0
-#define TWO 1
-
-int tile[31][2];
+int tile[31];
 
 int main(void){
-	int n = 0;
-	scanf("%d", &n);
+	int N, i, j;
+	scanf("%d", &N);
 
-	tile[1][TWO] = 1;
-	tile[2][TWO] = 2;
-
-	tile[2][THREE] = 3;
-	tile[4][THREE] = 11;
-
-	for(int i = 3; i <= n; i++)
-		tile[i][TWO] = tile[i-1][TWO] + tile[i-2][TWO];
-	for(int i = 1; i <= n; i++){
-		if(i % 2 == 1) continue;
-		tile[i][THREE] = tile[i][TWO] * 
+	tile[0] = 1;
+	for(i = 1; i <= N; i++){
+		tile[i] = 0;
+		if(i % 2 == 0){
+			if(i >= 2) tile[i] = 3*tile[i-2];
+			for(j = 4; j <= i; j+=2){
+				tile[i] += 2*tile[i - j];
+			}
+		}
 	}
 
-	printf("%d\n", tile[n][THREE]);
+	printf("%d\n", tile[N]);
 
 	return 0;
 }

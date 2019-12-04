@@ -5,7 +5,7 @@ using namespace std;
 int main(void){
 	//n!/(n-k+1)!(k-1)! * (n-k+1)/k
 	int n, m;
-	signed long long ret = 1;
+	long double ret = 1;
 
 	scanf("%d %d", &n, &m);
 
@@ -13,6 +13,6 @@ int main(void){
 		ret = (ret * (n - k + 1)) / k;
 	}
 
-	printf("%lld\n", ret);
+	printf("%Lf\n", ret);
 	return 0;
 }

@@ -4,51 +4,48 @@
 
 using namespace std;
 
-int arr[100001];
-int cache[100001];
-int n;
-
-int dp(int s){
-	int ret = 0;
-	for(int i = s; i < n; i++){
-		if(arr[i] >= 0){
-			ret += arr[i];
-			cache[i] = 1;
-		}
-		else
-			break;
-	}
-	return ret;
-}
+int arr[100002];
 
 int main(void){
-	int ans = -1000;
-	vector<int> list;
+	int cache, n, p = 0;
+	int res = -1000 * 100001;
 	scanf("%d", &n);
-
-	for(int i = 0; i < n; i++){
-		scanf("%d", arr + i);
-		ans = max(ans, arr[i]);
-	}
-
-	if(ans > 0){
-		for(int i = 0; i < n; i++){
-			int c;
-			if(arr[i] > 0 && cache[i] == 0){
-				c = dp(i);
-				ans = max(ans, c);
-				list.push_back(c);
-			}
-			else if(arr[i] < 0 && cache[i] == 0)
-				list.push_back(arr[i]);
+	while(n--){
+		scanf("%d", &cache);
+		if(res < cache) res = cache;
+		if(cache == 0) continue;
+		if(cache * arr[p] >= 0){
+			arr[p] += cache;
+		}else{
+			p++;
+			arr[p] += cache;
 		}
 	}
 
-	for(int i = 0; i < list.size(); i++)
-		printf("%d ", list[i]);
+	printf("before: ");
+	for(int i = 0; i <= p; i++)
+		printf("%d ", arr[i]);
 	printf("\n");
 
-	printf("%d\n", ans);
+	for(int i = 0; i <= p;){
+		if(arr[i] > res) res = arr[i];
+		if(arr[i] < 0){
+			i++;
+			continue;
+		}
+		if(arr[i] < arr[i] + arr[i+1] + arr[i+2] && arr[i+2] < arr[i] + arr[i+1] + arr[i+2]){
+			arr[i+2] = arr[i] + arr[i+1] + arr[i+2];
+			i += 2;
+			if(arr[i] > res) res = arr[i];
+		}else{
+			i++;
+		}
+	}
+	printf("after: ");
+	for(int i = 0; i <= p; i++)
+		printf("%d ", arr[i]);
+	printf("\n");
 
+	printf("%d\n", res);
 	return 0;
 }

@@ -1,0 +1,354 @@
+       #!/usr/bin/python
+       # -*- coding: utf-8 -*-
+       
+    1: from collections import namedtuple
+    1: from queue import PriorityQueue
+    1: from queue import Queue
+    1: Item = namedtuple("Item", ['index', 'value', 'weight'])
+       
+    1: def expandBest(items, n, C):
+           count = 0
+           que = PriorityQueue()
+           (_, minValue, resConfig, relax) = relaxation(items, C)
+       
+           # Best Search
+           # print(minValue ,resConfig, relax)
+           que.put((-relax, (relax, [], Item(-1, 0, 0))))
+           result = [minValue, resConfig]
+           while not que.empty():
+               count+=1
+               (expect, config, current) = que.get()[1]
+       
+               # print(expect, config, current.index, current.value, current.weight)
+       
+               if current.index + 1 >= n:
+                   if(result[0] < current.value):
+                       result[0] = current.value
+                       result[1] = config
+                   continue
+       
+               i = items[current.index + 1]
+               v = current.value
+               w = current.weight
+               #Take
+               if w + i.weight <= C:
+                   que.put((-expect, (expect, config + [1], Item(i.index, v + i.value, w + i.weight))))
+       
+               #Doesn't take
+               (index, minValue, resConfig, relax) = relaxation(items[(current.index+2):], C - current.weight)
+               expect = current.value + relax
+               if minValue > result[0]:
+                   result[0] = minValue
+                   result[1] = config + [0] + resConfig
+               if expect > result[0]:
+                   que.put((-expect, (expect, config + [0], Item(i.index, v, w))))
+           print("best1",count)
+           return result
+       
+    1: def expandBest2(items, n, C, factor):
+           que = PriorityQueue()
+           count = 0
+       
+           if factor != 1:
+               items = list(map(lambda item: Item(item.index, item.value, item.weight / factor), items))
+               C = C / factor
+           items = sorted(items, key=lambda item: -item.value)
+           minValue = findMinValue(items, n, C)
+           items = sorted(items, key=lambda item: round(-item.value/item.weight, 6))
+           (index, _, resConfig, relax) = relaxation(items, C)
+           minValue = max([findMinValue(items, n, C), minValue], key=lambda v: v[0])
+       
+           # Best Search
+           que.put((-relax, (relax, [0] * len(items), Item(0, 0, 0))))
+           result = [minValue[0], minValue[1]]
+           
+           while not que.empty():
+               count += 1
+               (expect, config, current) = que.get()[1]
+               if expect <= result[0]:
+                   continue
+               nextIndex = current.index + 1
+               currentIndex = current.index
+               # print(expect, config, current.index, current.value, current.weight)
+       
+               if currentIndex >= n:
+                   if(result[0] < current.value):
+                       result[0] = current.value
+                       result[1] = config
+                   continue
+       
+               # Put to queue
+               item = items[currentIndex]
+               value = current.value
+               weight = current.weight
+       
+               remain = C - weight
+               minWeight = min(items[currentIndex:], key=lambda item: item.weight).weight
+               if remain < minWeight:
+                   if value > result[0]:
+                       result[0] = value
+                       result[1] = config
+                   continue
+       
+               # Find new expectation
+               newExpect = 0.0
+               expConfig = [0] * n
+               for index in range(nextIndex, n):
+                   if remain - items[index].weight > 0:
+                       newExpect += items[index].value
+                       remain -= items[index].weight
+                       expConfig[items[index].index] = 1
+                   else:
+                       if newExpect + value > result[0]:
+                           result[0] = newExpect + value
+                           result[1] = expConfig
+                       newExpect += remain/items[index].weight * items[index].value
+                       break
+               newExpect += value
+       
+               # Take current
+               if weight + item.weight <= C and expect > result[0]:
+                   config[item.index] = 1
+                   que.put((-expect, (expect, config[:], Item(nextIndex, value + item.value, weight + item.weight))))
+                   config[item.index] = 0
+       
+               # Doesn't take current
+               if newExpect > result[0]:
+                   que.put((-newExpect, (newExpect, config[:], Item(nextIndex, value, weight))))
+           print("best2",count)
+           return (result[0], result[1])
+       
+    1: def findMinValue(items, n, C):
+    2:     sums = []
+    2:     itemFirst = None
+    2:     itemLast = None
+   82:     for first in range(0, n):
+   80:         itemFirst = items[first]
+   80:         config = [0] * n
+   80:         sumList = [(0, 0)] * n
+   80:         if itemFirst.weight <= C:
+   80:             sumList[first] = (itemFirst.value, itemFirst.weight)
+   80:             config[itemFirst.index] = 1
+               else:
+                   sumList = [(0, 0)] * n
+  284:         for last in range(first+1, n):
+  274:             itemLast = items[last]
+  274:             if sumList[last-1][1] + itemLast.weight <= C:
+  204:                 sumList[last] = (sumList[last-1][0] + itemLast.value, sumList[last-1][1] + itemLast.weight)
+  204:                 config[itemLast.index] = 1
+                   else:
+   70:                 sumList[n-1] = sumList[last -1]
+   70:                 break
+   80:         sums += [(sumList[n-1][0], config)]
+   82:     return max(sums, key=lambda s: s[0])
+       
+    1: def expandStep(items, n, C):
+           que = PriorityQueue()
+           count = 0
+       
+           minWeight = min(items, key=lambda item: item.weight).weight
+           items = sorted(items, key=lambda item: -item.weight)
+           items = sorted(items, key=lambda item: -item.value)
+           items = sorted(items, key=lambda item: item.value / (item.weight ** 2), reverse=True)
+           minValue = findMinValue(items, n, C)
+           print("min", minValue[0])
+           items = sorted(items, key=lambda item: -item.value/item.weight)
+           minValue = max([findMinValue(items, n, C), minValue], key=lambda v:v[0])
+           (index, _, resConfig, relax) = relaxation(items, C)
+       
+           print("min", minValue[0])
+       
+           # Step Search
+           que.put((0, relax, [0] * n, Item(0, 0, 0)))
+           result = [minValue[0], minValue[1]]
+           
+           while not que.empty():
+               count += 1
+               pop = que.get()
+               qcount = pop[0]
+               expect = pop[1]
+               config = pop[2]
+               current = pop[3]
+               
+               nextIndex = current.index + 1
+               currentIndex = current.index
+               
+               print(qcount, currentIndex, config)
+       
+               if expect <= result[0] or currentIndex >= n:
+                   if result[0] < current.value:
+                       result[0] = current.value
+                       result[1] = config
+                   continue
+       
+               # Put to queue
+               item = items[currentIndex]
+               value = current.value
+               weight = current.weight
+       
+               remain = C - weight
+               minWeight = min(items[currentIndex:], key=lambda item: item.weight).weight
+               if remain < minWeight:
+                   if value > result[0]:
+                       result[0] = value
+                       result[1] = config
+                   continue
+               
+               # Take current
+               if weight + item.weight <= C and expect > result[0]:
+                   config[item.index] = 1
+                   que.put((qcount, expect, config[:], Item(nextIndex, value + item.value, weight + item.weight)))
+                   config[item.index] = 0
+               # Find new expectation
+               newExpect = 0.0
+               expConfig = [0] * n
+               for index in range(nextIndex, n):
+                   if remain - items[index].weight > 0:
+                       newExpect += items[index].value
+                       remain -= items[index].weight
+                       expConfig[items[index].index] = 1
+                   else:
+                       if newExpect > result[0]:
+                           result[0] = newExpect
+                           result[1] = expConfig
+                       newExpect += remain/items[index].weight * items[index].value
+                       break
+               newExpect += value
+               # Doesn't take current
+               if newExpect > result[0]:
+                   que.put((qcount + 1, newExpect, config[:], Item(nextIndex, value, weight)))
+           print("step",count)
+           return (result[0], result[1])
+       
+    1: def expandStepReviseConfig(items, n, C):
+    1:     que = PriorityQueue()
+    1:     count = 0
+       
+   41:     minWeight = min(items, key=lambda item: item.weight).weight
+   41:     items = sorted(items, key=lambda item: (item.value ** 2) / item.weight, reverse=True)
+    1:     minValue = findMinValue(items, n, C)
+    1:     print("min", minValue[0])
+   41:     items = sorted(items, key=lambda item: -item.value/item.weight)
+    3:     minValue = max([findMinValue(items, n, C), minValue], key=lambda v:v[0])
+    1:     relax = relaxation(items, C)[3]
+    1:     print("min", minValue[0])
+       
+           # Step Search
+    1:     que.put((0, -relax, [], Item(0, 0, 0)))
+    1:     minConfig = []
+   41:     for i in range(len(minValue[1])):
+   40:         if minValue[1][i] == 1:
+    2:             minConfig += [i]
+    1:     result = [minValue[0], minConfig]
+           
+302035:     while not que.empty():
+302034:         count += 1
+302034:         pop = que.get()
+302034:         qcount = pop[0]
+302034:         expect = -pop[1]
+302034:         config = pop[2]
+302034:         current = pop[3]
+               
+302034:         nextIndex = current.index + 1
+302034:         currentIndex = current.index
+               
+               # print(qcount, currentIndex, config)
+       
+               # Put to queue
+302034:         item = items[currentIndex]
+302034:         value = current.value
+302034:         weight = current.weight
+       
+302034:         remain = C - weight
+7078422:         if expect <= result[0] or nextIndex > n or remain < min(items[currentIndex:], key=lambda item: item.weight).weight:
+149411:             if result[0] < value:
+                       result[0] = value
+                       result[1] = config
+                       print("update", result[0])
+                   continue
+       
+               # Take current
+152623:         if weight + item.weight <= C and expect > result[0]:
+149411:             que.put((qcount, -expect, config+[item.index], Item(nextIndex, value + item.value, weight + item.weight)))
+               # Find new expectation
+152623:         newExpect = 0.0
+152623:         expConfig = []
+302028:         for index in range(nextIndex, n):
+302027:             if remain - items[index].weight > 0:
+149405:                 newExpect += items[index].value
+149405:                 remain -= items[index].weight
+149405:                 expConfig += [items[index].index]
+                   else:
+152622:                 if newExpect + value > result[0]:
+    1:                     result[0] = newExpect + value
+    1:                     result[1] = expConfig
+    1:                     print("update", qcount, result[0])
+152622:                 newExpect += remain/items[index].weight * items[index].value
+152622:                 break
+152623:         newExpect += value
+               # Doesn't take current
+152623:         if newExpect > result[0]:
+152622:             que.put((qcount + 1, -newExpect, config, Item(nextIndex, value, weight)))
+    1:     print("step",count)
+   41:     return (int(result[0]), list(map(lambda x: 1 if x in result[1] else 0, list(range(n)))))
+       
+    1: def relaxation(sItems, C):
+    1:     if(len(sItems) == 0):
+               return (0, 0, [], 0.0)
+       
+    1:     minValue = 0
+    1:     relaxation = 0.0
+    1:     weight = 0.0
+       
+    1:     resConfig = [0] * len(sItems)
+    8:     for index in range(len(sItems)):
+    8:         item = sItems[index]
+    8:         if weight + item.weight > C:
+    1:             relaxation += (C - weight)/item.weight * item.value
+    1:             break
+    7:         if weight + item.weight <= C:
+    7:             resConfig[index] = 1
+    7:             relaxation += item.value
+    7:             minValue += item.value
+    7:             weight += item.weight
+    1:     return (index, minValue, resConfig, relaxation)
+       
+    1: def solve_it(input_data):
+           # Modify this code to run your optimization algorithm
+       
+           # parse the input
+    1:     lines = input_data.split('\n')
+       
+    1:     firstLine = lines[0].split()
+    1:     item_count = int(firstLine[0])
+    1:     capacity = int(firstLine[1])
+       
+    1:     items = []
+       
+   41:     for i in range(1, item_count+1):
+   40:         line = lines[i]
+   40:         parts = line.split()
+   40:         items.append(Item(i-1, int(parts[0]), int(parts[1])))
+       
+           # a trivial greedy algorithm for filling the knapsack
+           # it takes items in-order until the knapsack is full
+           # result = expandBest2(items, item_count, capacity, 1)
+           # result = expandBest2(items, item_count, capacity, 2 ** 10)
+    1:     result = expandStepReviseConfig(items, item_count, capacity)
+    1:     value, taken = result[0], result[1]
+       
+           # prepare the solution in the specified output format
+    1:     output_data = str(value) + ' ' + str(0) + '\n'
+    1:     output_data += ' '.join(map(str, taken))
+    1:     return output_data
+       
+    1: if __name__ == '__main__':
+    1:     import sys
+    1:     if len(sys.argv) > 1:
+    1:         file_location = sys.argv[1].strip()
+    1:         with open(file_location, 'r') as input_data_file:
+    1:             input_data = input_data_file.read()
+    1:         print(solve_it(input_data))
+           else:
+               print('This test requires an input file.  Please select one from the data directory. (i.e. python solver.py ./data/ks_4_0)')
+       

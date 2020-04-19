@@ -1,43 +1,60 @@
 #include <cstdio>
-#include <iostream>
+#include <cstring>
 
 #define MOD 1000000
 
 using namespace std;
 
-int password[5001];
-int solve[5001];
+char password[5001];
+int len;
 
-int main(void){
-	string input;
-	char cache;
-	int n;
+//TopDown
+int dp(int current){
+	int ret = 0;
+	if(current == len) return 1;
+	if(current > len) return 0;
+	if(password[current] == '0') return 0;
 
-	cin >> input;
-	n = input.size();
+	int x = password[current], y = password[current + 1];
+	ret += dp(current + 1) % MOD;
+	if(x == '1' || x == '2')
+		ret += dp(current + 2) % MOD;
+	return ret;
+}
 
-	for(int i = 0; i < n; i++)
-		password[i] = input.at(i) - '0';
-
-	solve[0] = 1;
-	for(int i = 1; i < n; i++){
-		solve[i] = solve[i-1];
-		if(i == 1){
-			if(password[i-1] == 1)
-				solve[i] += 1;
-			else if(password[i-1] == 2 && password[i]<= 7)
-				solve[i] += 1;
-		}
-		else{
-			if(password[i-1] == 1)
-				solve[i] += solve[i-2];
-			else if(password[i-1] == 2 && password[i]<= 6)
-				solve[i] += solve[i-2];
-		}
-		solve[i] %= MOD;
+int ret[50001];
+//BottomUp
+int updp(){
+	int len = strlen(password);
+	
+	if(password[len - 1] != '0')
+		ret[len - 1] = 1;
+	if(len >= 2){
+		ret[len-2] = ret[len-1];
+		if(password[len - 2] == '1' || (password[len - 2] == '2' && password[len - 1] <= '6'))
+			ret[len - 2]++;
+	}
+	for(int i = len - 3; i >= 0; i--){
+		if(password[i] != '0' && password[i + 1] != '0')
+			ret[i] += ret[i + 1];
+		if(password[i] == '1' || (password[i] == '2' && password[i+1] <= '6'))
+			ret[i] += ret[i + 2] % MOD;
+		ret[i] %= MOD;
 	}
 
-	printf("%d\n", solve[n-1]);
+	for(int i = 0; i < len; i++)
+		printf("[%d]", ret[i]);
+	printf("\n");
+	return ret[0] % MOD;
+}
 
+int main(void){
+	int ret = 1;
+
+	scanf("%s", password);
+	len = strlen(password);
+
+	// printf("%d\n", dp(0) % MOD);
+	printf("%d\n", updp() % MOD);
 	return 0;
 }

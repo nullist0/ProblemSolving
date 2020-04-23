@@ -8,7 +8,6 @@
 using namespace std;
 
 char str1[MAX], str2[MAX];
-
 int c[MAX+1][MAX+1];
 
 void print_stack(stack<char> *st){

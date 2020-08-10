@@ -15,8 +15,14 @@ The values are colors.
 2. The size of the set of colors must be smaller than solutions found before.
 
 ## Search
-1. Variable Ordering : Order the variable by having the least domain and having the most number of adjacent nodes which is not colored.
-2. Value Ordering
+### Labelling
+We use Variable/Value labelling.
+
+### Variable Ordering
+The variables will be ordered by having the **least** domain and having the **most** number of adjacent nodes which is not colored.
+
+### Value Ordering
+The values will be ordered by having the **least** occurrence in the node-color array.
 
 ## Model
 ```

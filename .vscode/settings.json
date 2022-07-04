@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "array": "cpp",
+        "exception": "cpp",
+        "optional": "cpp",
+        "functional": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp"
+    }
+}

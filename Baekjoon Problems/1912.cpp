@@ -1,51 +1,44 @@
 #include <cstdio>
 #include <algorithm>
-#include <vector>
+
+#define MIN -1000 * 100000
 
 using namespace std;
 
-int arr[100002];
+int n;
+int arr[100000];
 
-int main(void){
-	int cache, n, p = 0;
-	int res = -1000 * 100001;
+// Largest Sequential Sum
+long long LSS() {
+	long long localSum[n];
+	long long globalSum = MIN;
+
+	// localSum[k] = max(arr[k], max(0 <= i < k)(localSum[i] + sum(arr[i+1:n])))
+
+	for(int k = 0; k < n; k++) {
+		if(k == 0) {
+			localSum[0] = arr[0];
+		} else {
+			int cache = 0;
+			localSum[k] = max((long long)arr[k], localSum[k-1] + arr[k]);
+		}
+	}
+
+	for(int i = 0; i < n; i++) {
+		globalSum = max(globalSum, localSum[i]);
+	}
+
+	return globalSum;
+}
+
+int main(void) {
 	scanf("%d", &n);
-	while(n--){
-		scanf("%d", &cache);
-		if(res < cache) res = cache;
-		if(cache == 0) continue;
-		if(cache * arr[p] >= 0){
-			arr[p] += cache;
-		}else{
-			p++;
-			arr[p] += cache;
-		}
+
+	for(int i = 0; i < n; i++) {
+		scanf("%d", arr + i);
 	}
 
-	printf("before: ");
-	for(int i = 0; i <= p; i++)
-		printf("%d ", arr[i]);
-	printf("\n");
+	printf("%lld\n", LSS());
 
-	for(int i = 0; i <= p;){
-		if(arr[i] > res) res = arr[i];
-		if(arr[i] < 0){
-			i++;
-			continue;
-		}
-		if(arr[i] < arr[i] + arr[i+1] + arr[i+2] && arr[i+2] < arr[i] + arr[i+1] + arr[i+2]){
-			arr[i+2] = arr[i] + arr[i+1] + arr[i+2];
-			i += 2;
-			if(arr[i] > res) res = arr[i];
-		}else{
-			i++;
-		}
-	}
-	printf("after: ");
-	for(int i = 0; i <= p; i++)
-		printf("%d ", arr[i]);
-	printf("\n");
-
-	printf("%d\n", res);
 	return 0;
 }

@@ -6,75 +6,55 @@
 
 using namespace std;
 
-vector<pair<int, int> > checkpoints, sortedpointsX, sortedpointsY;
-int N, Q;
+vector<pair<int, int> > checkpoints;
+int N;
 
-double dist(int from, int to){
-	int fx = checkpoints[from].first, fy = checkpoints[from].second;
-	int nx = checkpoints[to].first, ny = checkpoints[to].second;
-	int dx = fx - nx, dy = fy - ny;
+int can_reach(int a, int b, int hp, int has_boost) {
+	int src_x, src_y;
+	int dest_x, dest_y;
+	int dx, dy;
+	long long length;
 
-	return min(dx, dy);
+	src_x = checkpoints[a].first;
+	src_y = checkpoints[a].second;
+
+	dest_x = checkpoints[b].first;
+	dest_y = checkpoints[b].second;
+
+	dx = dest_x - src_x;
+	dy = dest_y - src_y;
+
+	length = (dx * dx) + (dy * dy);
+
+	if(hp * hp >= length) {
+		return 1;
+	} else if((hp >= dy || hp >= dx) && has_boost) {
+		return 1;
+	}
+	
+	return 0;
 }
 
-int main(void){
-	int x, y;
-	int cache[N];
+int query(int a, int b, int x) {
+	queue<int> 
+}
+
+int main(void) {
+	int Q;
+	int X, Y;
+	int a, b, x;
 
 	scanf("%d %d", &N, &Q);
 
-	for(int i = 0; i < N; i++){
-		scanf("%d %d", &x, &y);
-		checkpoints.push_back(make_pair(x, y));
-		sortedpointsX.push_back(make_pair(x, i));
-		sortedpointsY.push_back(make_pair(y, i));
-		
-		cache[i] = 0;
+	for(int i = 0; i < N; i++) {
+		scanf("&d &d", &X, &Y);
+
+		checkpoints.push_back(make_pair(X, Y));
 	}
 
-	sort(sortedpointsX.begin(), sortedpointsX.end());
-	sort(sortedpointsY.begin(), sortedpointsY.end());
-
-	for(int qt = 1; qt <= Q; qt++){
-		int from, to, hp;
-		scanf("%d %d %d", &from, &to, &hp);
-
-		from--; to--;
-		queue<int> q;
-		q.push(from);
-
-		cache[from] = qt;
-
-		while(!q.empty()){
-			int current = q.front();
-			int cx = checkpoints[current].first, cy = checkpoints[current].second;
-
-			q.pop();
-			//printf("%d : %d\n", qt, current);
-
-			for(int j = 0; j < N; j++){
-				if(cache[j] == qt) continue;
-				int nx = sortedpointsX[j].first, nxi = sortedpointsX[j].second;
-				int ny = sortedpointsY[j].first, nyi = sortedpointsY[j].second;
-
-				if(nx > cx + hp && ny > cy + hp) break;
-
-				if(cx - hp <= nx && nx <= cx + hp && cache[nxi] != qt){
-					cache[nxi] = qt;
-					q.push(nxi);
-				}
-				if(cy - hp <= ny && ny <= cy + hp && cache[nyi] != qt){
-					cache[nyi] = qt;
-					q.push(nyi);
-				}
-			}
-			if(cache[to] == qt)
-				break;
-		}
-		if(cache[to] == qt)
-			printf("YES\n");
-		else
-			printf("NO\n");
+	for(int i = 0; i < Q; i++) {
+		scanf("%d %d %d", &a, &b, &x);
+		printf("%s\n", query(a, b, x) ? "YES" : "NO");
 	}
 
 	return 0;
